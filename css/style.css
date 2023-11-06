@@ -449,7 +449,10 @@ body {
 }
 
 .product-item {
-  min-height: 400px;
+  /* min-height: 400px; */
+  height: 400px;
+  max-width: 271px;
+  width: 100%;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   text-align: center;
@@ -627,9 +630,13 @@ body {
   display: inline;
 }
 
+.product {
+  margin-bottom: 80px;
+}
+
 .product__more {
   text-align: center;
-  margin: 35px 0 80px;
+  margin: 35px 0 0;
 }
 
 .product__more-link {
@@ -639,4 +646,8 @@ body {
   text-transform: uppercase;
   background: #f0f0f4;
   padding: 16px 43px;
+}
+
+.banner {
+  margin-bottom: 80px;
 }
