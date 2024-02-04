@@ -134,6 +134,10 @@ body {
   display: none;
 }
 
+.banner__link--mob {
+  display: none;
+}
+
 .user-list {
   display: flex;
   align-items: center;
@@ -1663,4 +1667,16 @@ button.catalog__filter-btnline {
   font-size: 13px;
   line-height: 16px;
   letter-spacing: 0.12em;
+}
+
+.product-slider .slick-dots {
+  bottom: -30px;
+}
+
+.product-slider .slick-dots button {
+  background-color: #c4c4c4;
+}
+
+.product-slider .slick-dots .slick-active button {
+  background-color: #1c62cd;
 }
