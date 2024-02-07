@@ -26,6 +26,12 @@
         <div class="container">
           <div class="header__top-inner">
             <nav class="menu">
+              <button class="menu__btn">
+                <div class="menu__btn-line"></div>
+                <div class="menu__btn-line"></div>
+                <div class="menu__btn-line"></div>
+              </button>
+
               <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="#">Магазины</a></li>
                 <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
@@ -35,6 +41,9 @@
               </ul>
             </nav>
             <a class="logo__img" href="#"><img src="images/logo.svg" alt="Логотип" /></a>
+            <a class="logo__img--mob" href="#"
+              ><img src="images/logo-mob.svg" alt="Логотип"
+            /></a>
             <div class="header__box">
               <p class="header__adress">Москва, ул. Науки 25</p>
               <ul class="user-list">
@@ -59,6 +68,116 @@
           </div>
         </div>
       </div>
+
+      <ul class="menu-mobile__list">
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <img class="menu-mobile__img" src="/images/user.svg" alt="" />
+            <p>Войти</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <img class="menu-mobile__img" src="/images/user.svg" alt="" />
+            <p>Регистрация</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <img class="menu-mobile__img" src="/images/favorite.svg" alt="" />
+            <p>Избранное</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <img class="menu-mobile__img" src="/images/basket.svg" alt="" />
+            <p>Корзина</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <img class="menu-mobile__img" src="/images/house.svg" alt="" />
+            <p>Магазины</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <img class="menu-mobile__img" src="/images/procent.svg" alt="" />
+            <p>Акции</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <img class="menu-mobile__img" src="/images/box.svg" alt="" />
+            <p>Доставка и оплата</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <p>Квадроциклы</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <p>Катера</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <p>Гидроциклы</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <p>Лодки</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <p>Вездеходы</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <p>Снегоходы</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <p>Двигатели</p>
+          </a>
+        </li>
+
+        <li class="menu-mobile__item">
+          <a class="menu-mobile__link" href="#">
+            <p>Запчасти</p>
+          </a>
+        </li>
+      </ul>
+
+      <div class="menu__mobile-linewrapper">
+        <div class="menu__mobile-line">
+          <li class="menu__item"><a class="menu__link" href="#">Магазины</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">Акции</a></li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Доставка и оплата</a>
+          </li>
+        </div>
+      </div>
+
       <div class="header__bottom">
         <div class="container">
           <ul class="menu-categories">
@@ -93,10 +212,12 @@
 
     <div class="breadcrumbs">
       <div class="container">
-        <ul class="bradcrumbs__list">
-          <li class="bradcrumbs__list-item"><a href="/drive-moto-shop">Главная</a></li>
-          <li class="bradcrumbs__list-item"><span>Гидроциклы</span></li>
-        </ul>
+        <div class="breadcrumbs__inner">
+          <ul class="breadcrumbs__list mobile-overflow">
+            <li class="breadcrumbs__list-item"><a href="/drive-moto-shop">Главная</a></li>
+            <li class="breadcrumbs__list-item"><span>Гидроциклы</span></li>
+          </ul>
+        </div>
       </div>
     </div>
 
@@ -105,11 +226,13 @@
         <h2 class="catalog__title">Гидроциклы</h2>
 
         <div class="catalog__filter">
-          <div class="catalog__filter-items">
-            <button>Полноприводные</button>
-            <button>от 5000</button>
-            <button>BRP</button>
-            <button>еще</button>
+          <div class="catalog__filter-itemsinner">
+            <div class="catalog__filter-items mobile-overflow">
+              <button>Полноприводные</button>
+              <button>от 5000</button>
+              <button>BRP</button>
+              <button>еще</button>
+            </div>
           </div>
           <div class="catalog__filter-btn">
             <select class="filter-style select-item">
@@ -195,8 +318,9 @@
           </div>
         </div>
         <div class="catalog__inner">
+          <div class="aside__btn">Фильтр</div>
           <aside class="catalog__inner-aside aside-filter">
-            <div class="tbs-wrapper">
+            <div class="tabs-wrapper tabs-wrapper--no-scroll">
               <div class="tabs aside-filter__tabs">
                 <a class="tab aside-filter__tab tab--active" href="#filter-1"
                   ><span>Параметры</span></a
@@ -516,7 +640,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -539,7 +663,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -562,7 +686,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -587,7 +711,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -610,7 +734,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -633,7 +757,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -656,7 +780,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -679,7 +803,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -702,7 +826,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -725,7 +849,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -750,7 +874,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -773,7 +897,7 @@
               <a class="product-item__notify-link" href="#"
                 ><span>Сообщить о поступлении</span></a
               >
-              <a class="product-item catalog-item" href="#">
+              <a class="product-item catalog-item" href="/drive-moto-shop/product-page.html">
                 <p class="product-item__hover-text">посмотреть товар</p>
                 <img
                   class="product-item__img"
@@ -823,8 +947,8 @@
                 <button class="footer-form__btn" type="submit">Отправить</button>
               </form>
             </div>
-            <div class="footer__top-item">
-              <h6 class="footer__top-title">Информация</h6>
+            <div class="footer__top-item footer__top-itemdrop">
+              <h6 class="footer__top-title footer__topdrop">Информация</h6>
               <ul class="footer-list">
                 <li class="footer-list__item"><a href="#">О компании</a></li>
                 <li class="footer-list__item"><a href="#">Контакты</a></li>
@@ -833,7 +957,7 @@
               </ul>
             </div>
             <div class="footer__top-item">
-              <h6 class="footer__top-title">Интернет-магазин</h6>
+              <h6 class="footer__top-title footer__topdrop">Интернет-магазин</h6>
               <ul class="footer-list">
                 <li class="footer-list__item"><a href="#">Доставка и самовывоз</a></li>
                 <li class="footer-list__item"><a href="#">Оплата</a></li>

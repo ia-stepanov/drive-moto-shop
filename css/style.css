@@ -302,6 +302,10 @@ li.slick-active button {
   text-align: right;
 }
 
+.aside__btn {
+  display: none;
+}
+
 .price {
   font-family: 'Barlow', sans-serif;
   position: relative;
@@ -826,7 +830,7 @@ li.slick-active button {
   margin-bottom: 40px;
 }
 
-.bradcrumbs__list-item {
+.breadcrumbs__list-item {
   display: inline-block;
   padding-right: 16px;
   margin-right: 10px;
@@ -835,7 +839,7 @@ li.slick-active button {
   color: #c4c4c4;
 }
 
-.bradcrumbs__list-item:after {
+.breadcrumbs__list-item:after {
   content: '';
   position: absolute;
   right: 0;
@@ -845,7 +849,7 @@ li.slick-active button {
   bottom: 6px;
 }
 
-.bradcrumbs__list-item:last-child::after {
+.breadcrumbs__list-item:last-child::after {
   display: none;
 }
 
